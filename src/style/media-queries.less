@@ -1,0 +1,21 @@
+@import "variaveis.less";
+
+@media screen and (max-width: 1023px) {
+  .container {
+    max-width: 80%;
+  }
+
+  .products {
+    .grid(2);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .products {
+    display: block;
+  }
+
+  .product-item {
+    margin-bottom: 32px;
+  }
+}

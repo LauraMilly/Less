@@ -1,0 +1,24 @@
+@import "maps.less";
+
+.reset {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.botao(@cor) {
+  display: block;
+  background-color: @colors[@cor]; // Correção na sintaxe do mapa
+  color: @colors[textColor]; // Correção: Usando 'textColor' do mapa
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+// Mixin para Grid responsivo
+.grid(@colunas) {
+  display: grid;
+  grid-template-columns: repeat(@colunas, 1fr);
+  gap: 16px;
+}
